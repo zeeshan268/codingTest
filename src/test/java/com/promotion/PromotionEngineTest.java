@@ -53,7 +53,7 @@ void testScenarioB()
     cartB.put("A", new CartItem(products.get("A"),5));
     cartB.put("B",new CartItem(products.get("B"),5));
     cartB.put("C",new CartItem(products.get("C"),1));
-    int total =engine.calculateTotal(cartB;
+    int total =engine.calculateTotal(cartB);
     assertEquals(370,total,"Scenario B total should be 370");
 }
 
@@ -65,7 +65,7 @@ void testScenarioB()
         cartC.put("B",new CartItem(products.get("B"),5));
         cartC.put("C",new CartItem(products.get("C"),1));
         cartC.put("D",new CartItem(products.get("D"),1));
-        int total =engine.calculateTotal(cartC;
+        int total =engine.calculateTotal(cartC);
         assertEquals(200,total,"Scenario B total should be 200");
     }
 
