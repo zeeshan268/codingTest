@@ -16,11 +16,12 @@ public class PromotionEngine {
     {
 
         int total=0;
+        // Apply promotion first
         for (Promotion promo: promotions  )
         {
             total+=promo.apply(cartItems);
         }
-
+        // Add remaining items without promotions
         for(CartItem item : cartItems.values())
 
         {

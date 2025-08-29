@@ -22,6 +22,7 @@ public class QuantityPromotion implements  Promotion{
         int unitPrice=item.getProduct().getPrice();
         int promoBundles=qty/requiredQty;
         int remaining=qty%requiredQty;
+        //Update quantity lest after applying promotion
         item.setQuantity(remaining);
         return promoBundles*promoPrice;
     }

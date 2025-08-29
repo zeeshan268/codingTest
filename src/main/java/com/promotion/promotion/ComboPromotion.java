@@ -23,6 +23,7 @@ private int comboprice;
         int qty1=item1.getQuantity();
         int qty2=item2.getQuantity();
         int combos=Math.min(qty1,qty2);
+        //update quantities after applying combo
         item1.setQuantity(qty1-combos);
         item2.setQuantity(qty2-combos);
         return  combos*comboprice;
